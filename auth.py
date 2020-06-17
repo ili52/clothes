@@ -1,8 +1,3 @@
-from flask import Blueprint, render_template, request, url_for, redirect, flash
-from .forms import RegisterForm
-from werkzeug.sercurity import generate_password_hash, check_password_hash
-from .import db
-from models import User
 
     @bp.route('/register,methods=['GET', 'POST'])
     def register():
